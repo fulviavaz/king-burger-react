@@ -1,0 +1,45 @@
+.cardapio{
+    display: flex;
+    width: 100%;
+
+    .cardapio__left{
+        // background-image: url(../../assets/bgcardapio.png), lightgray 50% / cover no-repeat;
+        height: auto;
+        width: 50%;
+        position: relative;
+        align-items: flex-start; 
+        
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+        .cardapio__left__content {
+            width: 50%;
+            top:-60%;
+            margin: 45%;
+            text-align: left;
+            position: absolute;
+            z-index: 1;
+
+            .cardapio__left__title{
+                color: #3B200B;
+                    font-family: Lilita One;
+                    font-size: 41.421px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 45.563px;
+                    /* 110% */
+                    text-transform: uppercase;
+            }
+        }
+
+    .cardapio__right{
+        background-color: #3B200B;
+        height: 500px;
+        width: 50%;
+    }
+}

@@ -1,0 +1,58 @@
+.banner{
+    background: url(../../assets/banner.png), lightgray 50% / cover no-repeat;
+    width: 100%;
+    height: 545px;
+    position: relative; 
+    
+        .banner__content{
+            position: absolute;
+            display: block;
+            text-align: left;
+            margin-left: 8%;  
+            margin-top: 113px;                    
+            
+
+            .banner__title{
+                color: rgba(29, 6, 5, 0.90);
+                font-family: 'Lato', sans-serif;
+                font-size: 22.861px;
+                font-style: normal;
+                font-weight: 700;
+            }
+
+            .banner__text{
+                color: rgba(29, 6, 5, 0.69);
+                font-family: 'Lato', sans-serif;
+                font-size: 22.861px;
+                font-style: normal;
+                font-weight: 400;
+
+                span{
+                    color: rgba(29, 6, 5, 0.69);
+                    font-family: 'Lato', sans-serif;
+                    font-size: 22.861px;
+                    font-style: normal;
+                    font-weight: 900;
+                    background-color: #F59A1B;
+                    border-radius:3px;
+                    padding: 5px;
+                }
+            }
+            button{
+                display: inline-flex;
+                font-family: 'Lato', sans-serif;
+                padding: 10.16px 20.321px;
+                align-items: center;
+                color: #fff;          
+                border-radius: 5.08px;
+                background: #F43127;
+                color: #FFF;
+                border-color: transparent;
+                font-size: 22.861px;
+                font-style: normal;
+                font-weight: 700;
+                cursor: pointer;                
+            }
+
+        }        
+    }

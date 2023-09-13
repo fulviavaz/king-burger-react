@@ -1,0 +1,80 @@
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0;
+    background-color: rgba(59, 32, 11, 0.05);
+    backdrop-filter: blur(5px);
+    position:absolute;
+    z-index: 1;
+
+
+    .container{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 85%;
+        // padding:0 250px;
+        margin: 0 auto;
+
+        ul {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                list-style: none;
+                margin-left:60px;
+        
+                li {
+                    margin: 0 1rem;                    
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #635352;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                    
+                            
+                    &:hover {
+                        color: #34201F;
+                        font-weight: 700;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: #635352;
+                        font-family: 'Lato', sans-serif;
+                    }
+                }
+
+            }
+
+                        .social {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            margin-left: 100px;
+            
+                            img {
+                                margin-right: 15px;
+                                cursor: pointer;
+                            }
+
+                            button{
+                                background-color: #F59A1B;
+                                border: none;
+                                cursor: pointer;
+                                margin-left:15px;
+                                display: flex;
+                                align-items: center;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 700;
+                                padding: 4px 16px;
+                                border-radius: 5px;
+                                font-family: 'Lato', sans-serif;
+                            }
+                        }
+    }
+    
+}

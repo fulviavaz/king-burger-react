@@ -1,0 +1,78 @@
+.footer{
+    background-color: #FFFFFF;
+
+    .footer__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        height: 100px;
+        // max-width: 1200px;
+        width: 85%;
+        margin: 0 auto;
+
+        .footer__container__links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
+
+            ul{
+                display: flex;
+                justify-content: space-between;
+                gap:20px;
+                align-items: center;
+                width: 100%;
+
+                li{
+                    list-style: none;
+
+                    a{
+                        color: #3A210B;
+                            font-family: Lato;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            text-decoration: none;
+
+                            &:hover{
+                                font-weight: 700;
+                            }
+                    }
+                }
+            }           
+            
+        }
+            .footer__container__social {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                align-items: center;                           
+            
+            }
+                        
+        }
+                .footer__container__copy{
+                    display: block;
+                    padding-bottom: 20px;
+
+                    p{
+                        color: rgba(2, 14, 31, 0.69);
+                            text-align: center;
+                            font-family: Inter;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 700;
+
+                            span{
+                                color: rgba(2, 14, 31, 0.30);
+                                    font-family: Inter;
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    
+                            }
+                            
+                    }
+                }
+    }
