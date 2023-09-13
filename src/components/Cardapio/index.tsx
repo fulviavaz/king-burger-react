@@ -20,7 +20,54 @@ export default function Cardapio() {
           </button>
         </div>
       </div>
-      <div className={styles.cardapio__right}></div>
+      <div className={styles.cardapio__right}>
+        <h2 className={styles.cardapio__right__title}>
+          Cardápio imperial | Burger
+        </h2>
+        <div className={styles.cardapio__right__item}>
+          <h3 className={styles.cardapio__right__subtitle}>
+            Classic burger
+            .........................................................................R$49,99
+          </h3>
+          <p className={styles.cardapio__right__description}>
+            Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru,
+            Tomate, Alface, Servidor do pão de batata
+          </p>
+        </div>
+
+        <div className={styles.cardapio__right__item}>
+          <h3 className={styles.cardapio__right__subtitle}>
+            Special big burger
+            .................................................................R$49,99
+          </h3>
+          <p className={styles.cardapio__right__description}>
+            Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru,
+            Tomate, Alface, Servidor do pão de batata
+          </p>
+        </div>
+
+        <div className={styles.cardapio__right__item}>
+          <h3 className={styles.cardapio__right__subtitle}>
+            special big burger
+            .................................................................R$49,99
+          </h3>
+          <p className={styles.cardapio__right__description}>
+            Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru,
+            Tomate, Alface, Servidor do pão de batata
+          </p>
+        </div>
+
+        <div className={styles.cardapio__right__item}>
+          <h3 className={styles.cardapio__right__subtitle}>
+            Mexican burger
+            ......................................................................R$49,99
+          </h3>
+          <p className={styles.cardapio__right__description}>
+            Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru,
+            Tomate, Alface, Servidor do pão de batata
+          </p>
+        </div>
+      </div>
     </section>
   );
 }

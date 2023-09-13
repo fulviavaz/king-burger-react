@@ -19,7 +19,7 @@
 
         .cardapio__left__content {
             width: 50%;
-            top:-60%;
+            top:-45%;
             margin: 45%;
             text-align: left;
             position: absolute;
@@ -34,12 +34,92 @@
                     line-height: 45.563px;
                     /* 110% */
                     text-transform: uppercase;
+
+                    span{
+                         
+                            
+                            background-color: #F59A1B;
+                            border-radius: 3px;
+                            padding: 5px;
+                    }
+            }
+
+            .cardapio__left__text{
+                color: rgba(29, 6, 5, 0.69);
+                    /* T-16 */
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22.4px;
+                    /* 140% */
+            }
+
+            .cardapio__left__button{
+                color: #FFF;
+                    text-align: center;
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 22.4px;
+                    /* 140% */
+
+                    border-radius: 5.215px;
+                        background:#F43127;
+                        border: none;
+                        padding: 10px 20px;
+                        cursor: pointer;
             }
         }
 
     .cardapio__right{
         background-color: #3B200B;
-        height: 500px;
+        height: 575px;
         width: 50%;
+        text-align: left;
+        padding: 20px 30px;
+
+        .cardapio__right__title{
+            color: #F59A1B;
+            
+                /* H1-32 */
+                font-family: Lilita One;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 35.2px;
+                /* 110% */
+                text-transform: uppercase;
+        }
+
+                .cardapio__right__item{
+
+                    .cardapio__right__subtitle{
+                        color: #FAE4D0;
+                        
+                            /* H3-20 */
+                            font-family: Lilita One;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 22px;
+                            /* 110% */
+                            text-transform: uppercase;
+                    }
+
+                    .cardapio__right__description{
+                        color: rgba(255, 255, 255, 0.90);
+                        
+                            /* T-16 */
+                            font-family: Lato;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 22.4px;
+                            /* 140% */
+                    }
+
+                }
     }
 }
