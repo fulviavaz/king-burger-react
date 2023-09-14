@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Cardapio.module.scss";
 import cardapioimg from "../../assets/bgcardapio.png";
+import UINumber from "components/UINumber";
 
 export default function Cardapio() {
   return (
@@ -27,10 +28,11 @@ export default function Cardapio() {
         <div className={styles.cardapio__right__item}>
           <h3 className={styles.cardapio__right__subtitle}>
             Classic burger
-            .........................................................................R$49,99
+            .........................................................................
+            <UINumber>{49}</UINumber>
           </h3>
           <p className={styles.cardapio__right__description}>
-            Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru,
+            Hamburguer bovino 160g, Molho, Bacon, Queijo prato, peito de peru,
             Tomate, Alface, Servidor do pão de batata
           </p>
         </div>
@@ -38,10 +40,11 @@ export default function Cardapio() {
         <div className={styles.cardapio__right__item}>
           <h3 className={styles.cardapio__right__subtitle}>
             Special big burger
-            .................................................................R$49,99
+            .................................................................
+            <UINumber>{49}</UINumber>
           </h3>
           <p className={styles.cardapio__right__description}>
-            Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru,
+            Hamburguer bovino 160g, Molho, Bacon, Queijo prato, peito de peru,
             Tomate, Alface, Servidor do pão de batata
           </p>
         </div>
@@ -49,10 +52,11 @@ export default function Cardapio() {
         <div className={styles.cardapio__right__item}>
           <h3 className={styles.cardapio__right__subtitle}>
             special big burger
-            .................................................................R$49,99
+            .................................................................
+            <UINumber>{49}</UINumber>
           </h3>
           <p className={styles.cardapio__right__description}>
-            Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru,
+            Hamburguer bovino 160g, Molho, Bacon, Queijo prato, peito de peru,
             Tomate, Alface, Servidor do pão de batata
           </p>
         </div>
@@ -60,10 +64,11 @@ export default function Cardapio() {
         <div className={styles.cardapio__right__item}>
           <h3 className={styles.cardapio__right__subtitle}>
             Mexican burger
-            ......................................................................R$49,99
+            ......................................................................
+            <UINumber>{49}</UINumber>
           </h3>
           <p className={styles.cardapio__right__description}>
-            Hamburguer bonino 160g, Molho, Bacon, Queijo prato, peito de peru,
+            Hamburguer bovino 160g, Molho, Bacon, Queijo prato, peito de peru,
             Tomate, Alface, Servidor do pão de batata
           </p>
         </div>
