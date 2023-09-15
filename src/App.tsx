@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Map from "components/Map";
 import Footer from "components/Footer";
 import Cardapio from "components/Cardapio";
+import Atendimento from "components/Atendimento";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Banner />
       <Ofertas />
       <Cardapio />
+      <Atendimento />
       <Map />
       <Footer />
     </div>

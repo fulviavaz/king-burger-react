@@ -1,0 +1,64 @@
+.atendimento{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+
+    .atendimento__left{
+        width: 50%;
+        height: auto;
+        
+    }
+
+    .atendimento__right{
+        // margin-left:20px;
+        text-align: left;
+
+        .atendimento__title{
+            color: rgba(29, 6, 5, 0.90);
+            font-family: Lilita One;
+            font-size: 41.723px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 45.895px;
+            /* 110% */
+            text-transform: uppercase;
+            width:325px;
+
+            span{
+                background-color: #F59A1B;
+                border-radius: 3px;
+                padding: 4px;
+
+            }
+                    
+        }
+        
+        p{
+            color: rgba(29, 6, 5, 0.69);
+            font-family: Lato;
+            font-size: 20.861px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 29.206px;
+            /* 140% */
+            width: 420px;
+        }
+
+        button{
+            color: #FFF;
+            text-align: center;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22.4px;
+            /* 140% */
+            border-radius: 5.215px;
+            background: #F43127;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+                }    
+    }
+}
