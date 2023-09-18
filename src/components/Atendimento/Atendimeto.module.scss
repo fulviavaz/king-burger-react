@@ -1,7 +1,7 @@
 .atendimento{
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 70px;
 
     .atendimento__left{
@@ -13,6 +13,7 @@
     .atendimento__right{
         // margin-left:20px;
         text-align: left;
+        width: 50%;
 
         .atendimento__title{
             color: rgba(29, 6, 5, 0.90);
@@ -34,7 +35,7 @@
                     
         }
         
-        p{
+                .atendimento__text{
             color: rgba(29, 6, 5, 0.69);
             font-family: Lato;
             font-size: 20.861px;
@@ -45,7 +46,7 @@
             width: 420px;
         }
 
-        button{
+                .atendimento__btn{
             color: #FFF;
             text-align: center;
             font-family: Lato;

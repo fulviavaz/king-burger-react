@@ -15,11 +15,11 @@ export default function Atendimento() {
         <h2 className={style.atendimento__title}>
           Atendimento <span>personalizado</span>
         </h2>
-        <p clasName={style.atendimento__text}>
+        <p className={style.atendimento__text}>
           Todos os nossos clientes são tratados como rei e rainha, com a nossa
           colunaria artesanal.
         </p>
-        <button clasName={style.atendimento__btn}>Cardápio Imperial</button>
+        <button className={style.atendimento__btn}>Cardápio Imperial</button>
       </div>
     </section>
   );

@@ -6,6 +6,7 @@ import Map from "components/Map";
 import Footer from "components/Footer";
 import Cardapio from "components/Cardapio";
 import Atendimento from "components/Atendimento";
+import Entregas from "components/Entregas";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Ofertas />
       <Cardapio />
       <Atendimento />
+      <Entregas />
       <Map />
       <Footer />
     </div>

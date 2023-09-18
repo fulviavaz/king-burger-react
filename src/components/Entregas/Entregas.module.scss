@@ -1,0 +1,183 @@
+.entregas{
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+
+    .entregas__line {
+            background-color: rgba(29, 6, 5, 0.15);
+            height: 1px;
+            width: 85%;
+            margin: 0 auto;
+            margin-bottom: 70px;
+        }
+
+    .entregas__container{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 70px;
+
+        .entregas__right{
+            width: 50%
+        }
+
+        .entregas__left{
+            width: 50%;
+            display: block;
+            text-align: left;
+
+            .entregas__left__title{
+                color: rgba(29, 6, 5, 0.90);
+                
+                    /* H1-32 */
+                    font-family: Lilita One;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 35.2px;
+                    /* 110% */
+                    text-transform: uppercase;
+            }
+
+                        .entregas__left__iten{
+                            display: flex;
+                            align-items: center;
+                            // justify-content: space-evenly;
+                            gap:20px;
+                            width: 569.438px;
+                                height: 90px;
+                                border-radius: 10px;
+                                    background: #FFF;
+                                    /* Shadow */
+                                        box-shadow: 0px 4px 40px 0px rgba(178, 155, 132, 0.50);
+                                        padding: 22px 15px;
+                                        margin-bottom: 10px ;
+
+
+
+                            .entregas__left__icon{
+                                width: 60px;
+                                    height: 60px;
+                                    flex-shrink: 0;
+                                    background-color: #FAE2CB;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                            }
+                            .entregas__left__text{
+                                text-align: left;
+
+                                h3{
+                                    color: rgba(29, 6, 5, 0.90);
+                                        /* H3-20 */
+                                        font-family: Lilita One;
+                                        font-size: 20px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 22px;
+                                        /* 110% */
+                                        text-transform: uppercase;
+                                }
+
+                                p{
+                                    color: rgba(29, 6, 5, 0.69);
+                                        font-family: Lato;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 19.2px;
+                                        margin-top: -15px;
+                                        /* 120% */
+                                }
+                                                        }
+                        }
+        }
+    }
+
+        .entregas__pedido{            
+            width: 85%;
+            height: 123.04px;
+            border-radius: 10px;
+            background:#F43127;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            padding: 20px 30px;
+
+            .entregas__pedido__icon{
+                width: 94.828px;
+                height: 94.828px;
+                fill: rgba(29, 6, 5, 0.20);
+                background-color: #1D060533;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .entregas__pedido__text{
+                text-align: left;  
+            
+                h3{
+                    color: rgba(29, 6, 5, 0.69);
+                    
+                        /* H2-25 */
+                        font-family: Lilita One;
+                        font-size: 25px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 27.5px;
+                        /* 110% */
+                        text-transform: uppercase;
+                }
+
+                p{
+                    color: rgba(255, 255, 255, 0.90);
+                    
+                        /* T-16 */
+                        font-family: Lato;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22.4px;
+                        /* 140% */
+                        margin-top:-20px;
+                        width:466px;
+
+                        span{
+                            color: rgba(255, 255, 255, 0.90);
+                                font-family: Lato;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 22.4px;
+                        }
+                }
+
+                
+            }
+                        button {
+                            display: inline-flex;
+                            padding: 8px 16px;
+                            align-items: center;
+                            gap: 10px;
+                            border-radius: 4px;
+                            background: #FAE4D0;
+                            border: none;
+                            color: #F43127;
+                                text-align: center;
+                                font-family: Lato;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 900;
+                                line-height: 25.2px;
+                                /* 140% */
+                                text-transform: uppercase;
+                        }
+        }
+
+    
+}
