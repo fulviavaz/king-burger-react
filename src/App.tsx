@@ -7,6 +7,7 @@ import Footer from "components/Footer";
 import Cardapio from "components/Cardapio";
 import Atendimento from "components/Atendimento";
 import Entregas from "components/Entregas";
+import Realeza from "components/Realeza";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Ofertas />
       <Cardapio />
       <Atendimento />
+      <Realeza />
       <Entregas />
       <Map />
       <Footer />

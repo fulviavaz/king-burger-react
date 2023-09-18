@@ -1,0 +1,93 @@
+.realeza{
+    width:85%;
+    text-align: left;
+    margin: 0 auto;
+    display: block;
+
+    .realeza__title{
+        color: rgba(29, 6, 5, 0.90);
+        
+            /* H1-32 */
+            font-family: Lilita One;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 35.2px;
+            /* 110% */
+            text-transform: uppercase;
+    }
+        .realeza__text{
+            color: rgba(29, 6, 5, 0.69);
+            
+                /* T-16 */
+                font-family: Lato;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22.4px;
+                /* 140% */
+                margin-top:-20px;
+        }
+
+        .realeza__container{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 70px;
+
+            .realeza__card{
+                width: 370px;
+                height: 200px;
+                border-radius: 10px;
+                background: #FFF;
+                box-shadow: 0px 4px 25px 0px rgba(60, 35, 13, 0.10);
+                padding:10px 10px;
+
+                .realeza__card__depoimento{
+                    color: #635352;
+                    
+                        /* T-16 */
+                        font-family: Lato;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;                        
+                        /* 140% */
+                        width:334px;
+                }
+
+                .realeza__card__data{
+                    display: flex;
+                    align-items: center;
+                }
+
+                .realeza__card__subject{
+                    text-align: left;
+                    margin-left: 10px;
+
+                    .realeza__card__name{
+                        color: rgba(29, 6, 5, 0.90);
+                        
+                            /* H4-18 */
+                            font-family: Lilita One;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;                            
+                            text-transform: uppercase;
+                    }
+
+                    .realeza__card__job{
+                        color: rgba(29, 6, 5, 0.69);
+                        
+                            /* T-12 */
+                            font-family: Lato;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            margin-top: -15px;
+                            
+                            /* 140% */
+                    }
+                }
+            }
+        }
+}
