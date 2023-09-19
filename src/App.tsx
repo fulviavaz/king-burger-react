@@ -8,6 +8,7 @@ import Cardapio from "components/Cardapio";
 import Atendimento from "components/Atendimento";
 import Entregas from "components/Entregas";
 import Realeza from "components/Realeza";
+import Instagram from "components/Instagram";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Cardapio />
       <Atendimento />
       <Realeza />
+      <Instagram />
       <Entregas />
       <Map />
       <Footer />

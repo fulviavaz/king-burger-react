@@ -1,0 +1,58 @@
+.instagram{
+    width: 100%;
+    display:block;
+    justify-content: center;
+    padding-bottom: 70px;
+
+    .instagram__title{
+        color: rgba(29, 6, 5, 0.90);
+            text-align: center;
+        
+            /* H1-32 */
+            font-family: Lilita One;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 35.2px;
+            /* 110% */
+            text-transform: uppercase;
+    }
+
+    .instagram__text{
+        color: rgba(29, 6, 5, 0.69);
+            text-align: center;
+        
+            /* T-16 */
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22.4px;
+            /* 140% */
+    }
+
+        .instagram__photos{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .instagram__tag{
+            width: 100%;
+            background-color:#F59A1B ;
+            padding: 10px 0;
+
+            span{
+                color: rgba(29, 6, 5, 0.90);
+                    text-align: center;
+                    font-family: Lilita One;
+                    font-size: 28.02px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28.02px;
+                    /* 100% */
+                    text-transform: uppercase;
+            }
+        }
+}
