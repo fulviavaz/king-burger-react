@@ -4,6 +4,7 @@ import whatsapp from "../../assets/whatsapp.svg";
 import style from "./Navbar.module.scss";
 import { ReactComponent as Logo } from "assets/logo.svg";
 import { HashLink as Link } from "react-router-hash-link";
+import { Anchor } from "antd";
 
 export default function Navbar() {
   return (
@@ -11,23 +12,25 @@ export default function Navbar() {
       <div className={style.container}>
         <Logo />
         <div>
-          <ul>
-            <li>
-              <Link to="#">Home</Link>
-            </li>
-            <li>
-              <Link to="#">Promoção</Link>
-            </li>
-            <li>
-              <Link to="#">Cardápio</Link>
-            </li>
-            <li>
-              <Link to="#">Comentários</Link>
-            </li>
-            <li>
-              <Link to="#">Contato</Link>
-            </li>
-          </ul>
+          <Anchor targetOffset={50}>
+            <ul>
+              <li>
+                <Link to="#home">Home</Link>
+              </li>
+              <li>
+                <Link to="#promocao">Promoção</Link>
+              </li>
+              <li>
+                <Link to="#cardapio">Cardápio</Link>
+              </li>
+              <li>
+                <Link to="#comentarios">Comentários</Link>
+              </li>
+              <li>
+                <Link to="#contato">Contato</Link>
+              </li>
+            </ul>
+          </Anchor>
         </div>
         <div className={style.social}>
           <Link to="#">

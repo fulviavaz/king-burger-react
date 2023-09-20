@@ -5,7 +5,7 @@ import UINumber from "components/UINumber";
 
 export default function Cardapio() {
   return (
-    <section className={styles.cardapio}>
+    <section id="cardapio" className={styles.cardapio}>
       <div className={styles.cardapio__left}>
         <img src={cardapioimg} alt="bg cardapio" />
         <div className={styles.cardapio__left__content}>

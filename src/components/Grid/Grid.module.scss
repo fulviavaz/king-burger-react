@@ -1,13 +1,14 @@
 .grid {
-    width: 85%;
-    height: 53vh;
+    max-width:1280px;
+    height: 455px;
     margin: 0 auto;    
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 90px;
-    
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    margin-top: 70px;
+        
 
         .grid__ofertaPrincipal{
                 grid-area: 1 / 1 / 5 / 4;
@@ -37,8 +38,7 @@
                             font-size: 18px;
                             font-style: normal;
                             font-weight: 400;
-                            margin-top: -15px;
-                            
+                                                        
                     }
                 }
                                 
@@ -83,6 +83,7 @@
                 
                 grid-area: 3 / 4 / 5 / 6;
                 position: relative;
+                
 
                 .grid__title {
                         position: absolute;

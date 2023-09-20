@@ -4,7 +4,7 @@ import photo from "../../assets/photo.png";
 
 export default function Realeza() {
   return (
-    <section className={styles.realeza}>
+    <section id="comentarios" className={styles.realeza}>
       <h2 className={styles.realeza__title}>Nossa realeza</h2>
       <p className={styles.realeza__text}>
         A satisfação de nossos clientes em primeiro lugar!

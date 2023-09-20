@@ -5,7 +5,7 @@ import Schedulle from "components/Schedulle";
 
 export default function Ofertas() {
   return (
-    <section className={styles.ofertas}>
+    <section id="promocao" className={styles.ofertas}>
       <div className={styles.ofertas__container}>
         <h1 className={styles.ofertas__title}>Ofertas especiais</h1>
         <p className={styles.ofertas__text}>

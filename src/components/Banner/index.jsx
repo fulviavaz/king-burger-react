@@ -5,7 +5,7 @@ import Menu from "components/Menu";
 
 export default function Banner() {
   return (
-    <section className={style.banner}>
+    <section id="home" className={style.banner}>
       <div className={style.banner__content}>
         <h1 className={style.banner__title}>Uma nova experiência!</h1>
         <img src={kingburger} alt="King Burger" />

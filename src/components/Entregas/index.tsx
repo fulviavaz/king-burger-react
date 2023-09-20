@@ -9,7 +9,7 @@ import phone from "../../assets/phone.svg";
 
 export default function Entregas() {
   return (
-    <section className={styles.entregas}>
+    <section id="contato" className={styles.entregas}>
       <div className={styles.entregas__line}></div>
       <div className={styles.entregas__container}>
         <div className={styles.entregas__right}>
