@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Cardapio.module.scss";
 import cardapioimg from "../../assets/bgcardapio.png";
-import UINumber from "components/UINumber";
+import CardapioItem from "./CardapioItem";
 
 export default function Cardapio() {
+  const [data, setData] = useState([
+    {
+      plate: "",
+      price: 0,
+      ingredients: "",
+    },
+  ]);
+
+  useEffect(() => {
+    fetch("https://api.brchallenges.com/api/empire-burger/menu")
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
+
   return (
     <section id="cardapio" className={styles.cardapio}>
       <div className={styles.cardapio__left}>
@@ -25,53 +39,16 @@ export default function Cardapio() {
         <h2 className={styles.cardapio__right__title}>
           Cardápio imperial | Burger
         </h2>
-        <div className={styles.cardapio__right__item}>
-          <h3 className={styles.cardapio__right__subtitle}>
-            Classic burger
-            .........................................................................
-            <UINumber>{49}</UINumber>
-          </h3>
-          <p className={styles.cardapio__right__description}>
-            Hamburguer bovino 160g, Molho, Bacon, Queijo prato, peito de peru,
-            Tomate, Alface, Servidor do pão de batata
-          </p>
-        </div>
 
-        <div className={styles.cardapio__right__item}>
-          <h3 className={styles.cardapio__right__subtitle}>
-            Special big burger
-            .................................................................
-            <UINumber>{49}</UINumber>
-          </h3>
-          <p className={styles.cardapio__right__description}>
-            Hamburguer bovino 160g, Molho, Bacon, Queijo prato, peito de peru,
-            Tomate, Alface, Servidor do pão de batata
-          </p>
-        </div>
-
-        <div className={styles.cardapio__right__item}>
-          <h3 className={styles.cardapio__right__subtitle}>
-            special big burger
-            .................................................................
-            <UINumber>{49}</UINumber>
-          </h3>
-          <p className={styles.cardapio__right__description}>
-            Hamburguer bovino 160g, Molho, Bacon, Queijo prato, peito de peru,
-            Tomate, Alface, Servidor do pão de batata
-          </p>
-        </div>
-
-        <div className={styles.cardapio__right__item}>
-          <h3 className={styles.cardapio__right__subtitle}>
-            Mexican burger
-            ......................................................................
-            <UINumber>{49}</UINumber>
-          </h3>
-          <p className={styles.cardapio__right__description}>
-            Hamburguer bovino 160g, Molho, Bacon, Queijo prato, peito de peru,
-            Tomate, Alface, Servidor do pão de batata
-          </p>
-        </div>
+        {data.length > 0 &&
+          data.map((item) => (
+            <CardapioItem
+              key={item.plate}
+              plate={item.plate}
+              price={item.price}
+              ingredients={item.ingredients}
+            />
+          ))}
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 .instagram{
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;    
     display:block;
     justify-content: center;
     padding-bottom: 70px;
@@ -39,9 +40,11 @@
         }
 
         .instagram__tag{
-            width: 100%;
+            
             background-color:#F59A1B ;
             padding: 10px 0;
+            align-items: center;
+            margin: 0 auto;
 
             span{
                 color: rgba(29, 6, 5, 0.90);

@@ -4,7 +4,7 @@ import GoogleApiWrapper from "./MapView";
 
 export default function Map() {
   return (
-    <section className={styles.map}>
+    <section id="map" className={styles.map}>
       <div className={styles.map__container}>
         <div className={styles.map__text}>
           <h2>Onde fica o nosso castelo</h2>
