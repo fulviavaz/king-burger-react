@@ -34,6 +34,7 @@
             align-items: center;
             justify-content: space-between;
             padding-bottom: 70px;
+            gap: 30px;
 
             .realeza__card{
                 width: 370px;
@@ -53,12 +54,24 @@
                         font-weight: 400;                        
                         /* 140% */
                         width:334px;
+                        display: -webkit-box;
+                            -webkit-line-clamp: 4;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
                 }
 
                 .realeza__card__data{
                     display: flex;
                     align-items: center;
+
                 }
+
+                .realeza__card__photo img {
+                width: 50px;
+                height: 50px;
+                border-radius: 60px;
+                }
+
 
                 .realeza__card__subject{
                     text-align: left;
@@ -74,6 +87,8 @@
                             font-weight: 400;                            
                             text-transform: uppercase;
                     }
+
+                    
 
                     .realeza__card__job{
                         color: rgba(29, 6, 5, 0.69);

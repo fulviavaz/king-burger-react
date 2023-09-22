@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Realeza.module.scss";
-import photo from "../../assets/photo.png";
+import RealezaItem from "./RealezaItem";
 
 export default function Realeza() {
+  const [data, setData] = useState([
+    {
+      name: "",
+      image: "",
+      age: 0,
+      testimonial: "",
+    },
+  ]);
+
+  useEffect(() => {
+    fetch("https://api.brchallenges.com/api/empire-burger/testimonials")
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
+
   return (
     <section id="comentarios" className={styles.realeza}>
       <h2 className={styles.realeza__title}>Nossa realeza</h2>
@@ -10,56 +25,16 @@ export default function Realeza() {
         A satisfação de nossos clientes em primeiro lugar!
       </p>
       <div className={styles.realeza__container}>
-        <div className={styles.realeza__card}>
-          <p className={styles.realeza__card__depoimento}>
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-            turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-            nec fringilla accumsan, risus sem sollicitudin.”
-          </p>
-          <div className={styles.realeza__card__data}>
-            <div className={styles.realeza__card__photo}>
-              <img src={photo} alt="Foto de perfil" />
-            </div>
-            <div className={styles.realeza__card__subject}>
-              <p className={styles.realeza__card__name}>Carla gomes</p>
-              <p className={styles.realeza__card__job}>23 Anos • Designer</p>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.realeza__card}>
-          <p className={styles.realeza__card__depoimento}>
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-            turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-            nec fringilla accumsan, risus sem sollicitudin.”
-          </p>
-          <div className={styles.realeza__card__data}>
-            <div className={styles.realeza__card__photo}>
-              <img src={photo} alt="Foto de perfil" />
-            </div>
-            <div className={styles.realeza__card__subject}>
-              <p className={styles.realeza__card__name}>Carla gomes</p>
-              <p className={styles.realeza__card__job}>23 Anos • Designer</p>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.realeza__card}>
-          <p className={styles.realeza__card__depoimento}>
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-            turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-            nec fringilla accumsan, risus sem sollicitudin.”
-          </p>
-          <div className={styles.realeza__card__data}>
-            <div className={styles.realeza__card__photo}>
-              <img src={photo} alt="Foto de perfil" />
-            </div>
-            <div className={styles.realeza__card__subject}>
-              <p className={styles.realeza__card__name}>Carla gomes</p>
-              <p className={styles.realeza__card__job}>23 Anos • Designer</p>
-            </div>
-          </div>
-        </div>
+        {data.length > 0 &&
+          data.map((item) => (
+            <RealezaItem
+              key={item.name}
+              name={item.name}
+              image={item.image}
+              age={item.age}
+              testimonial={item.testimonial}
+            />
+          ))}
       </div>
     </section>
   );
