@@ -1,33 +1,24 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Realeza.module.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/scss";
 import RealezaItem from "./RealezaItem";
-import Slider from "./Slider";
-import { SwiperSlide } from "swiper/react";
+
+interface TestData {
+  name: string;
+  image: string;
+  age: number;
+  testimonial: string;
+}
 
 export default function Realeza() {
-  const [data, setData] = useState([
-    {
-      name: "",
-      image: "",
-      age: 0,
-      testimonial: "",
-    },
-  ]);
+  const [data, setData] = useState<TestData[]>([]);
 
   useEffect(() => {
     fetch("https://api.brchallenges.com/api/empire-burger/testimonials")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
-
-  const settings = {
-    slidesPerView: 5,
-    spaceBetween: 30,
-    navigation: true,
-    pagination: {
-      clickable: true,
-    },
-  };
 
   return (
     <section id="comentarios" className={styles.realeza}>
@@ -36,36 +27,28 @@ export default function Realeza() {
         A satisfação de nossos clientes em primeiro lugar!
       </p>
       <div className={styles.realeza__container}>
-        <Slider settings={settings}>
-          <SwiperSlide>
-            {data.length > 0 &&
-              data.map((item) => (
+        {data.length > 0 && (
+          <Swiper
+            spaceBetween={20}
+            slidesPerView={4}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 5000 }}
+            loop={true}
+          >
+            {data.map((item) => (
+              <SwiperSlide key={item.name}>
                 <RealezaItem
-                  key={item.name}
                   name={item.name}
                   image={item.image}
                   age={item.age}
                   testimonial={item.testimonial}
                 />
-              ))}
-          </SwiperSlide>
-        </Slider>
-      </div>
-      {/* 
-      <Slider settings={settings}>
-        <SwiperSlide>
-          {data.length > 0 &&
-            data.map((item) => (
-              <RealezaItem
-                key={item.name}
-                name={item.name}
-                image={item.image}
-                age={item.age}
-                testimonial={item.testimonial}
-              />
+              </SwiperSlide>
             ))}
-        </SwiperSlide>
-      </Slider> */}
+          </Swiper>
+        )}
+      </div>
     </section>
   );
 }

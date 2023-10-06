@@ -30,11 +30,13 @@
         }
 
         .realeza__container{
-            display:flex;
+            display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-bottom: 70px;
+            padding: 20px 20px;
             gap: 30px;
+            width: 100%;
+            height: auto;
 
             .realeza__card{
                 width: 370px;
@@ -43,6 +45,8 @@
                 background: #FFF;
                 box-shadow: 0px 4px 25px 0px rgba(60, 35, 13, 0.10);
                 padding:10px 10px;
+                margin-bottom: 50px;
+                margin-top: 50px;
 
                 .realeza__card__depoimento{
                     color: #635352;
@@ -106,3 +110,4 @@
             }
         }
 }
+
