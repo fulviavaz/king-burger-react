@@ -1,28 +1,10 @@
 import "./App.css";
-import Ofertas from "components/Ofertas";
-import Banner from "./components/Banner";
-import Navbar from "./components/Navbar";
-import Map from "components/Map";
-import Footer from "components/Footer";
-import Cardapio from "components/Cardapio";
-import Atendimento from "components/Atendimento";
-import Entregas from "components/Entregas";
-import Realeza from "components/Realeza";
-import Instagram from "components/Instagram";
+import Home from "pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Banner />
-      <Ofertas />
-      <Cardapio />
-      <Atendimento />
-      <Realeza />
-      <Instagram />
-      <Entregas />
-      <Map />
-      <Footer />
+      <Home />
     </div>
   );
 }
