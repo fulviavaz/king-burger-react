@@ -32,15 +32,18 @@ function ResponsiveAppBar() {
   const appBarStyle = {
     backgroundColor: "rgba(59, 32, 11, 0.05)",
     backDropFilter: "blur(55px)",
+    width: "100vw",
+    display: "flex",
+    paddingLeft:"90px",
   };
 
   const buttonStyle = {
     backgroundColor: "#F59A1B",
     border: "none",
     cursor: "pointer",
-    marginLeft: "15px",
+    marginLeft: "10px",
     display: "flex",
-    gap: "10px",
+    gap: "8px",
     alignItems: "center",
     fontSize: "16px",
     fontStyle: "normal",
@@ -125,12 +128,12 @@ function ResponsiveAppBar() {
             sx={{
               mr: 2,
               display: { xs: "flex" },
-              marginRight: "100px",
+              marginRight: "180px",
             }}
           >
             <Logo />
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow:1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -157,8 +160,8 @@ function ResponsiveAppBar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <IconButton sx={{ p: 0, gap: "20px" }}>
+          <Box sx={{ flexGrow: 0.3, display: { xs: "none", md: "flex" } }}>
+            <IconButton sx={{ p: 0, gap: "10px" }}>
               <img src={ifood} alt="Ifood" />
               <img src={instagram} alt="Instagram" />
               <svg

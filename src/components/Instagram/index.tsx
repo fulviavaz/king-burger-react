@@ -19,7 +19,7 @@ export default function Instagram() {
         <img src={inst3} alt="foto instagram" />
         <img src={inst4} alt="foto instagram" />
         <img src={inst1} alt="foto instagram" />
-        
+        <img src={inst2} alt="foto instagram" />
       </div>
       <div className={styles.instagram__tag}>
         <span>

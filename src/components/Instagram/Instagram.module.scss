@@ -1,5 +1,5 @@
 .instagram{
-    width: 85%;
+    width: 100%;
     margin: 0 auto;    
     display:block;
     justify-content: center;
@@ -36,7 +36,8 @@
             display:flex;
             justify-content: center;
             align-items: center;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            overflow: hidden;
         }
 
         .instagram__tag{
@@ -45,7 +46,7 @@
             padding: 10px 0;
             align-items: center;
             margin: 0 auto;
-
+        
             span{
                 color: rgba(29, 6, 5, 0.90);
                     text-align: center;

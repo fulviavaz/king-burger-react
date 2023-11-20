@@ -2,7 +2,7 @@
     width:85%;
     text-align: left;
     margin: 0 auto;
-    display: block;
+    // display: block;
 
     .realeza__title{
         color: rgba(29, 6, 5, 0.90);
@@ -33,10 +33,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 20px 20px;
-            gap: 30px;
             width: 100%;
             height: auto;
+            
 
             .realeza__card{
                 width: 370px;

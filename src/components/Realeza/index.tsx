@@ -29,7 +29,7 @@ export default function Realeza() {
       <div className={styles.realeza__container}>
         {data.length > 0 && (
           <Swiper
-            spaceBetween={20}
+            spaceBetween={250}
             slidesPerView={4}
             navigation
             pagination={{ clickable: true }}
