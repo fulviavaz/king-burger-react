@@ -1,4 +1,4 @@
-#I'm still implementing responsiveness
+## I'm still implementing responsiveness
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
