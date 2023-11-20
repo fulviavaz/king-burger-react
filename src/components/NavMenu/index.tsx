@@ -14,31 +14,20 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { ReactComponent as Logo } from "assets/logo.svg";
 
-const pages = ["Home", "Promoção", "Cardápio", "Comentários", "Contato"];
-// const settings = ["Ifood", "Instagram", "Contato"];
+const pages = ["Home", "Ofertas", "Cardapio", "Comentarios", "Contato"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
-  // const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
-  //   null
-  // );
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
-  // const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-  //   setAnchorElUser(event.currentTarget);
-  // };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
-  // const handleCloseUserMenu = () => {
-  //   setAnchorElUser(null);
-  // };
 
   const appBarStyle = {
     backgroundColor: "rgba(59, 32, 11, 0.05)",
@@ -145,6 +134,8 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
+                component="a"
+                href={`#${page.toLowerCase().replace(/\s/g, "-")}`} // Gerando o ID da seção a partir do nome da página
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
