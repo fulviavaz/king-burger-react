@@ -34,6 +34,7 @@ I used the Google Map´s API
 
 ### Menu
 In the Menu section, prices were formatted with the Intl.NumberFormat method.
+
 The list of menu items comes from an API.
 
 ### Depoimentos
@@ -45,6 +46,8 @@ The list of depoimentos items comes from an API.
 
 API:[ depoimentos ](https://api.brchallenges.com/api/empire-burger/testimonials) .
 [ menu ](https://api.brchallenges.com/api/empire-burger/menu).
+
 Figma: [link do figma](https://www.figma.com/file/ag4Az50adOF53pBrwI0wFg/Empire-Burger?node-id=0%3A1).
+
 Deploy: [link do deploy](https://king-burger-react.vercel.app/).
 
